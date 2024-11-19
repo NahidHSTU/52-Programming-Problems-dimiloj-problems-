@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+
+    for (int i = 0; i < T; ++i) {
+        int N;
+        cin >> N;
+        for (int row = 0; row < N; ++row) {
+            for (int col = 0; col < N; ++col) {
+                cout << '*';
+            }
+            cout << endl;
+        }
+        if (i < T - 1) {
+            cout << endl;
+        }
+    }
+
+    return 0;
+}
