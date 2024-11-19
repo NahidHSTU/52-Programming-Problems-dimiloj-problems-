@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+#define endl '\n'
+#define optimize() ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+using namespace std;
+
+int main()
+{
+    optimize();
+    int tc; cin>>tc;
+    while(tc--){
+
+    	string s; cin>>s;
+    	int len=s.size();
+    	if(s[len-1]=='0' || s[len-1]=='2' || s[len-1]=='4' || s[len-1]=='6' || s[len-1]=='8'){
+    		cout<<"even"<<endl;
+    	}
+    	else{
+    		cout<<"odd"<<endl;
+    	}
+    }
+
+    return 0;
+}
