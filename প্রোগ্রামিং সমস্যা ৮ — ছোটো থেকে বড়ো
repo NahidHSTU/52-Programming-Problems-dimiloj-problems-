@@ -1,0 +1,37 @@
+#include<bits/stdc++.h>
+#define endl '\n'
+#define optimize() ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+using namespace std;
+
+
+int main()
+{
+    optimize();
+    int tc; cin>>tc;
+
+    for (int i = 1; i <= tc; ++i)
+    {
+        
+        int a, b, c; cin>>a>>b>>c;
+        cout<<"Case "<<i<<": ";
+        if(a<b && a<c && b<c){
+            cout<<a<<" "<<b<<" "<<c<<endl;
+        }
+        else if(a<b && a<c && c<b){
+            cout<<a<<" "<<c<<" "<<b<<endl;
+        }
+        else if(b<a && b<c && a<c){
+            cout<<b<<" "<<a<<" "<<c<<endl;
+        }
+        else if(b<c && b<a && c<a){
+            cout<<b<<" "<<c<<" "<<a<<endl;
+        }else if(c<b && c<a && a<b){
+            cout<<c<<" "<<a<<" "<<b<<endl;
+        }
+        else if(c<b && c<a && b<a){
+            cout<<c<<" "<<b<<" "<<a<<endl;
+        }
+
+    }
+    return 0;
+}
