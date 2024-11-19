@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+#define endl '\n'
+#define optimize() ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+using namespace std;
+
+void solution(){
+
+   int r1,r2,b; cin>>r1>>r2>>b;
+   float cr,rr;
+   cr=r2/((300-b)/6.00);
+   if(r1<r2) rr=0.00;
+   else rr=((r1-r2+1.00)/ (b/6.00));
+   cout<<fixed<<setprecision(2)<<cr<<" "<<fixed<<setprecision(2)<<rr<<endl;
+}
+
+int main()
+{
+    optimize();
+    int tc; cin>>tc;
+    while(tc--){
+        solution();
+    }
+
+    return 0;
+}
